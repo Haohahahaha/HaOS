@@ -39,8 +39,8 @@ theme:
 edit_uri: edit/main/docs
 
 nav:
-  - 首页: docs/index.md
-  - 设计文档: docs/design/index.md
+  - 首页: index.md
+  - 设计文档: design/index.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
