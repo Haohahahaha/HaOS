@@ -1,0 +1,79 @@
+site_name: HaOS
+theme: 
+  name: material
+  icon:
+    logo: fontawesome/solid/computer
+  favicon: https://cs.haohaha.cn/image/favicon.png
+#     admonition:
+  palette:
+    - scheme: slate # 夜间模式
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+    - scheme: default # 日间模式
+      primary: teal # 上方的
+      accent: indigo # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - navigation.expand
+#   - navigation.prune
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    # Instant Loading
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    # Anchor tracking
+    - navigation.tracking
+    
+  language: zh
+
+edit_uri: edit/main/docs
+
+nav:
+  - 首页: docs/index.md
+  - 设计文档: docs/design/index.md
+
+extra_css:
+  - mkdocs/css/no-footer.css # 不使用底部的翻页
+  - mkdocs/extra_admonition.css # 自定义admonition
+
+markdown_extensions:
+    # Admonitions
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    # Icons, Emojis
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    # Formatting
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    # Diagrams
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  homepage: http://haos.haohaha.cn
+  social: # icons
+    - icon: fontawesome/brands/github
+      link: https://github.com/Haohahahaha/HaOS
+      name: GitHub | HaOS
+## [bottom-left corner]
+copyright: Copyright &copy; 2022-现在 浩哈哈哈哈_ # 左下角的版权声明
