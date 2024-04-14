@@ -41,6 +41,7 @@ edit_uri: edit/main/docs
 nav:
   - 首页: index.md
   - 设计文档: design/index.md
+    - v0.01 -- 简要设计架构: design/v0.01.md
 
 extra_css:
   - mkdocs/css/no-footer.css # 不使用底部的翻页
